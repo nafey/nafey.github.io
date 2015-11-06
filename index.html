@@ -5,13 +5,14 @@
   <p>Header...</p>
 
   <script>
-    alert('Hello, World new3!')
+    if ('serviceWorker' in navigator) {
+	   alert('true');
+	} else {
+		alert('false');
+	}
   </script>
 
   <p>...Footer</p>
   
-	<script>
-    alert('Hello, World new2!')
-  </script>
 </body>
 </html>
