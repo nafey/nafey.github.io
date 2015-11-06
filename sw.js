@@ -4,7 +4,7 @@ this.addEventListener('fetch', function(event) {
 	);
 });
 
-this.addEventListener('install', function(event)) {
+this.addEventListener('install', function(event) {
 	event.waitUntil(
 		caches.create('static-v1').then(function(cache) {
 			return cache.add({
@@ -12,4 +12,4 @@ this.addEventListener('install', function(event)) {
 			});
 		})
 	);
-};
+});
