@@ -8,7 +8,8 @@ this.addEventListener('install', function(event) {
 	event.waitUntil(
 		caches.create('static-v1').then(function(cache) {
 			return cache.add({
-				'/index.html'
+				'/web/',
+				'/web/web.html'
 			});
 		})
 	);
