@@ -7,9 +7,8 @@ this.addEventListener('fetch', function(event) {
 this.addEventListener('install', function(event) {
 	event.waitUntil(
 		caches.create('static-v1').then(function(cache) {
-			return cache.add({
-				'/web/',
-				'/web/web.html'
+			return caches.add({
+				'/index.html',
 			});
 		})
 	);
